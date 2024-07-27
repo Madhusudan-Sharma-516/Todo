@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-do List</title>
+  </head>
+  <body>
+    <section id="todo-container">
+      <h1>
+        To-DO List App<a
+          href="https://www.flaticon.com/free-icons/to-do"
+          title="to do icons"
+          ><img src="logo.png" alt="logo-img"
+        /></a>
+      </h1>
+      <div class="input-container">
+        <input id="input" type="text" placeholder="Enter your task" />
+
+        <button id="addBtn" onclick="addTask()">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <p id="err-msg"></p>
+      <div id="task-box">
+        <ul id="task-list"></ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
